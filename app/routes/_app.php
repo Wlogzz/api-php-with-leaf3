@@ -6,6 +6,7 @@ app()->get("/", function () {
 
 app()->get("/contactos", 'ContactosController@index');
 app()->get("/contactos/{id}", 'ContactosController@consultar');
+app()->post("/contactos", 'ContactosController@agregar');
 
 app()->get("/app", function () {
     // app() returns $app
